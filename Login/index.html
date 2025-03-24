@@ -9,8 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <title>Login</title>
     
-    <script src="./node_modules/echarts/dist/echarts.min.js"></script>
-    <script src="./node_modules/echarts-liquidfill/dist/echarts-liquidfill.min.js"></script>
+   <!--  <script src="./node_modules/echarts/dist/echarts.min.js"></script>
+    <script src="./node_modules/echarts-liquidfill/dist/echarts-liquidfill.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts-liquidfill/dist/echarts-liquidfill.min.js"></script>
     <script src="./node_modules/echarts-wordcloud/dist/echarts-wordcloud.min.js"></script>
     <script type="text/javascript">
         var Ext = Ext || {}; // Ext namespace won't be defined yet...
@@ -128,16 +130,16 @@ rst.error=!0;return rst}};return Microloader}();Ext.manifest=Ext.manifest||'boot
     
     <style>
         body {
-            /* 防止水印显示 */
+            /* é˜²æ­¢æ°´å°æ˜¾ç¤º */
             position: relative;
             z-index: 1;
         }
 
-        /* 隐藏固定遮罩 */
+        /* éšè—å›ºå®šé®ç½© */
         .x-mask.x-mask-fixed,
-        /* 隐藏水印消息 */
+        /* éšè—æ°´å°æ¶ˆæ¯ */
         .x-mask-msg,
-        /* 隐藏遮罩�? */
+        /* éšè—é®ç½©å±? */
         .x-mask {
             display: none !important;
             visibility: hidden !important;
@@ -149,7 +151,7 @@ rst.error=!0;return rst}};return Microloader}();Ext.manifest=Ext.manifest||'boot
             height: 0 !important;
         }
 
-        /* 确保内容正常显示 */
+        /* ç¡®ä¿å†…å®¹æ­£å¸¸æ˜¾ç¤º */
         .x-component {
             z-index: 2;
             position: relative;
